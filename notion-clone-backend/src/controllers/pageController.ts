@@ -201,3 +201,68 @@ export const moveBlockInPage = (req: Request, res: Response): void => {
     res.status(500).json({ success: false, error: "Failed to move block" });
   }
 };
+
+export const getAllActions = (req: Request, res: Response): void => {
+  try {
+    const actions = dbService.getAllActions();
+    res.json({ success: true, data: actions });
+  } catch (error) {
+    res.status(500).json({ success: false, error: "Failed to fetch actions" });
+  }
+};
+
+export const getActionsByPageId = (req: Request, res: Response): void => {
+  try {
+    const { pageId } = req.params;
+    const actions = dbService.getActionsByPageId(pageId);
+    res.json({ success: true, data: actions });
+  } catch (error) {
+    res.status(500).json({ success: false, error: "Failed to fetch actions" });
+  }
+};
+
+export const undoAction = (req: Request, res: Response): void => {
+  try {
+    const { pageId } = req.params;
+    const result = dbService.undoLastAction(pageId);
+
+    if (!result.page || !result.action) {
+      res.status(404).json({
+        success: false,
+        error: "No actions to undo or page not found",
+      });
+      return;
+    }
+
+    res.json({
+      success: true,
+      data: result.page,
+      action: result.action,
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: "Failed to undo action" });
+  }
+};
+
+export const redoAction = (req: Request, res: Response): void => {
+  try {
+    const { pageId } = req.params;
+    const result = dbService.redoLastAction(pageId);
+
+    if (!result.page || !result.action) {
+      res.status(404).json({
+        success: false,
+        error: "No actions to redo or page not found",
+      });
+      return;
+    }
+
+    res.json({
+      success: true,
+      data: result.page,
+      action: result.action,
+    });
+  } catch (error) {
+    res.status(500).json({ success: false, error: "Failed to redo action" });
+  }
+};

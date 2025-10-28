@@ -9,6 +9,10 @@ import {
   updateBlockInPage,
   deleteBlockFromPage,
   moveBlockInPage,
+  getAllActions,
+  getActionsByPageId,
+  undoAction,
+  redoAction,
 } from "../controllers/pageController";
 
 const router = Router();
@@ -22,4 +26,8 @@ router.post("/pages/:pageId/blocks", addBlockToPage);
 router.put("/pages/:pageId/blocks/:blockId", updateBlockInPage);
 router.delete("/pages/:pageId/blocks/:blockId", deleteBlockFromPage);
 router.post("/pages/:pageId/blocks/:blockId/move", moveBlockInPage);
+router.get("/actions", getAllActions);
+router.get("/actions/:pageId", getActionsByPageId);
+router.post("/pages/:pageId/undo", undoAction);
+router.post("/pages/:pageId/redo", redoAction);
 export default router;

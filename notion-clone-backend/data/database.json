@@ -8,7 +8,7 @@
           "id": "block-2",
           "type": "text",
           "textStyle": "p",
-          "content": "nice"
+          "content": "nicely done zac!!"
         },
         {
           "id": "block-5",
@@ -37,7 +37,7 @@
         }
       ],
       "createdAt": "2025-10-28T00:00:00.000Z",
-      "updatedAt": "2025-10-28T19:25:58.022Z"
+      "updatedAt": "2025-10-28T19:38:57.242Z"
     },
     {
       "id": "2",
@@ -82,6 +82,47 @@
       ],
       "createdAt": "2025-10-28T00:00:00.000Z",
       "updatedAt": "2025-10-28T00:00:00.000Z"
+    }
+  ],
+  "actions": [
+    {
+      "id": "action-1761680154503",
+      "timestamp": "2025-10-28T19:35:54.503Z",
+      "type": "edit",
+      "pageId": "1",
+      "blockId": "block-2",
+      "beforeState": {
+        "id": "block-2",
+        "type": "text",
+        "textStyle": "p",
+        "content": "nice"
+      },
+      "afterState": {
+        "id": "block-2",
+        "type": "text",
+        "textStyle": "p",
+        "content": "nicely done zac!!"
+      }
+    },
+    {
+      "id": "action-1761680332503",
+      "timestamp": "2025-10-28T19:38:52.503Z",
+      "type": "edit",
+      "pageId": "1",
+      "blockId": "block-2",
+      "beforeState": {
+        "id": "block-2",
+        "type": "text",
+        "textStyle": "p",
+        "content": "nicely done zac!!"
+      },
+      "afterState": {
+        "id": "block-2",
+        "type": "text",
+        "textStyle": "p",
+        "content": "nicely done zac!! Hello testing"
+      },
+      "undone": true
     }
   ]
 }
