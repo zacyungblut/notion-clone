@@ -1,0 +1,87 @@
+{
+  "pages": [
+    {
+      "id": "1",
+      "title": "Welcome to Notion Clone",
+      "blocks": [
+        {
+          "id": "block-2",
+          "type": "text",
+          "textStyle": "p",
+          "content": "nice"
+        },
+        {
+          "id": "block-5",
+          "type": "text",
+          "textStyle": "p",
+          "content": "• Multiple text styles (h1, h2, h3, paragraph)\n• Image blocks with custom dimensions\n• Clean and responsive design\n• Dark mode support"
+        },
+        {
+          "id": "block-1761678279356",
+          "type": "image",
+          "url": "/jeffrey.jpg",
+          "imageWidth": 600,
+          "imageHeight": 600
+        },
+        {
+          "id": "block-4",
+          "type": "text",
+          "textStyle": "h2",
+          "content": "Features"
+        },
+        {
+          "id": "block-1761678134229",
+          "type": "text",
+          "textStyle": "p",
+          "content": "hello"
+        }
+      ],
+      "createdAt": "2025-10-28T00:00:00.000Z",
+      "updatedAt": "2025-10-28T19:25:58.022Z"
+    },
+    {
+      "id": "2",
+      "title": "Getting Started",
+      "blocks": [
+        {
+          "id": "block-6",
+          "type": "text",
+          "textStyle": "h1",
+          "content": "Getting Started Guide"
+        },
+        {
+          "id": "block-7",
+          "type": "text",
+          "textStyle": "p",
+          "content": "Follow these steps to start using the Notion Clone application."
+        },
+        {
+          "id": "block-8",
+          "type": "text",
+          "textStyle": "h3",
+          "content": "Step 1: Start the Backend"
+        },
+        {
+          "id": "block-9",
+          "type": "text",
+          "textStyle": "p",
+          "content": "cd notion-clone-backend && npm run dev"
+        },
+        {
+          "id": "block-10",
+          "type": "text",
+          "textStyle": "h3",
+          "content": "Step 2: Start the Frontend"
+        },
+        {
+          "id": "block-11",
+          "type": "text",
+          "textStyle": "p",
+          "content": "cd notion-clone && npm run dev"
+        }
+      ],
+      "createdAt": "2025-10-28T00:00:00.000Z",
+      "updatedAt": "2025-10-28T00:00:00.000Z"
+    }
+  ]
+}
